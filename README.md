@@ -1,3 +1,4 @@
+# Extreme Datathon 2025: PS3 - Wealth Management Strategies
 # Extreme
 Datathon 2025 : PS3 : Wealth Management Strategies
 
@@ -60,7 +61,7 @@ The project utilizes two datasets:
 - Seaborn & Matplotlib (for visualization)
 - Scikit-learn (for preprocessing and modeling)
 - XGBoost, LightGBM, CatBoost (for alternative modeling approaches)
-# Extreme Datathon 2025: PS3 - Wealth Management Strategies
+
 
 ## Task 2 (Regression)
 
