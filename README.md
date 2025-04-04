@@ -62,12 +62,6 @@ The project utilizes two datasets:
 - XGBoost, LightGBM, CatBoost (for alternative modeling approaches)
 # Extreme Datathon 2025: PS3 - Wealth Management Strategies
 
-## License
-
-This project is licensed under the MIT License.
-
----
-
 ## Task 2 (Regression)
 
 ### Objective
