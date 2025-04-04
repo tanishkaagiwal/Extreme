@@ -1,6 +1,6 @@
 # Extreme Datathon 2025: PS3 - Wealth Management Strategies
 
-TASK 1 ( CLASSIFICATION )
+## TASK 1 ( CLASSIFICATION )
 
 This project analyzes financial and demographic data of 10,000 clients to predict their recommended investment strategy using machine learning techniques. The dataset contains information on clients' financial profiles, investment behaviors, goals, and literacy.
 
