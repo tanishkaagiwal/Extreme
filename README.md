@@ -60,6 +60,58 @@ The project utilizes two datasets:
 - Seaborn & Matplotlib (for visualization)
 - Scikit-learn (for preprocessing and modeling)
 - XGBoost, LightGBM, CatBoost (for alternative modeling approaches)
+# Extreme Datathon 2025: PS3 - Wealth Management Strategies
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Task 2 (Regression)
+
+### Objective
+
+To forecast each client's **portfolio_value** for the next 3 years using their 36-month historical time series and static attributes.
+
+---
+
+### Approach
+
+#### 1. EDA & Preprocessing
+- Merged **static_client_data** and **time_series_data**.
+- Performed **trend analysis**, **autocorrelation checks**, and identified **non-stationary patterns**.
+- Observed that analyzing features globally caused temporal trends to cancel out. Hence, processed data **client-wise**.
+
+#### 2. Stationarity & Transformation
+- Applied **differencing** to achieve stationarity **client-wise**.
+- Engineered temporal features including:
+  - **Lag values**.
+  - **Rolling statistics** (mean and standard deviation over 3 and 6 months).
+
+#### 3. Feature Selection
+- Used **Extra Trees Regressor** to select the most impactful features from both static and dynamic datasets.
+
+#### 4. Modeling
+- Implemented an **LSTM model** trained on the selected features.
+
+---
+
+### Initial Results
+
+- **R² score for forecasted_value_year_1**: 0.4745
+- **R² score for forecasted_value_year_2**: 0.5614
+- **R² score for forecasted_value_year_3**: 0.4653
+
+---
+
+### Feature Engineering for Final Model
+
+Introduced intelligent features to enhance predictive power:
+
+1. **portfolio_growth_rate**:
+   ```python
+   df.groupby('client_id')['portfolio_value_stationary'].pct_change()
 
 ## Installation & Usage
 1. Clone the repository:
