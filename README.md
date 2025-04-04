@@ -1,6 +1,4 @@
 # Extreme Datathon 2025: PS3 - Wealth Management Strategies
-# Extreme
-Datathon 2025 : PS3 : Wealth Management Strategies
 
 TASK 1 ( CLASSIFICATION )
 
